@@ -1,0 +1,216 @@
+/* Reglas generales */
+
+body, header, nav, ul, li, section, article, h1, h2, h3, footer, small, img, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+i {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+p, span {
+    font-size: .9rem;
+}
+
+small, figcaption {
+    font-size: .75rem;
+    color: dimgray;
+}
+
+p, small, figcaption {
+    text-align: justify;
+}
+
+figure {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+[role="button"] {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Reglas especificas */
+
+#encabezado-principal {
+    background-color: chartreuse;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+#encabezado-principal .logo-principal {
+    width: 7rem;
+    height: auto;
+}
+
+#encabezado-principal .menu-header {
+    width: 60%;
+}
+
+#encabezado-principal .menu-header.mobile {
+    display: none;
+}
+
+#encabezado-principal .menu-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#encabezado-principal .menu-header ul li {
+    display: flex;
+    padding: .5rem;
+    border-radius: .25rem;
+    background-color: transparent;
+}
+
+#encabezado-principal .menu-header ul li:hover {
+    background-color: #d4ffa9;
+}
+
+#contenido-principal {
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#contenido-principal .seccion-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home {
+    padding: 1rem;
+    background-color: aliceblue;
+    border: solid 1px grey;
+    margin-bottom: .5rem;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home.articulo-destacado-1 {
+    background-color: aquamarine;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home.articulo-destacado-1 figure figcaption {
+    color: #fff;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home.articulo-destacado-2 {
+    color: #fff;
+    background-color: blueviolet;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home.col-2 {
+    width: 50%;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home.col-1 {
+    width: 100%;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home.col-1 p {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home.col-3 {
+    width: 33%;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home hgroup {
+    margin-bottom: 1rem;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home hgroup h1 {
+    font-size: 1.6rem;
+}
+
+#contenido-principal .seccion-home .articulo-seccion-home hgroup h2 {
+    font-size: 1.2rem;
+}
+
+#pie-de-pagina-principal {
+    background-color: cadetblue;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#pie-de-pagina-principal .copyright {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+#pie-de-pagina-principal .logo-uba {
+    width: 75%;
+    height: 75%;
+}
+
+/* Reglas genericas */
+
+.icono-menu-hamburguesa {
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../imagenes/menu-hamburguesa.png');
+}
+
+
+/* Condiciones */
+
+@media all and (max-width: 500px) {
+
+    #encabezado-principal .menu-header.desktop {
+        display: none;
+    }
+
+    #encabezado-principal .menu-header.mobile {
+        display: block;
+    }
+
+    #contenido-principal .seccion-home .articulo-seccion-home,
+    #contenido-principal .seccion-home .articulo-seccion-home.col-1,
+    #contenido-principal .seccion-home .articulo-seccion-home.col-2 {
+        width: 100%;
+    }
+
+    #contenido-principal .seccion-home .articulo-seccion-home.col-1 p {
+        column-count: 2;
+    }
+
+    #contenido-principal .seccion-home .articulo-seccion-home.col-3 {
+        width: 50%;
+    }
+
+}
