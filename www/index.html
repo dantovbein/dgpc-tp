@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Accesibilidad</title>
+    <meta charset="utf-8"/>
+    <link href="css/estilos.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<header id="encabezado-principal">
+    <img class="logo-principal" src="http://dgpcfadu.com.ar/images/dgpc.svg" alt="Icono de DGPC" lang="es"
+         longdesc="DGPC es una catedra de la carrera de Diseño Gráfico y se cursa en la FADU" role="img"/>
+
+    <!-- Navegador que se mostrará solo en dispositivos moviles -->
+    <nav class="menu-header mobile" role="navigation">
+        <ul role="list">
+            <li>
+                <a class="btn btn-seccion-1" href="#" role="button">
+                    <i class="icono-menu-hamburguesa"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Navegador que se mostrará solo en desktop -->
+    <nav class="menu-header desktop" role="navigation">
+        <ul role="list">
+            <li>
+                <a class="btn btn-seccion-1" href="#" role="button">Seccion 1</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ID menu-lateral porque solo vamos a tener uno en nuestra app. -->
+<aside id="menu-lateral">
+    <nav role="navigation">
+        <ul role="list">
+            <li class="btn-1" role="button">Boton 1</li>
+        </ul>
+    </nav>
+</aside>
+
+<main id="contenido-principal">
+    <section class="seccion-home"> <!-- definir sin los ID´s y las Class sin caracteres especiales -->
+
+        <article class="articulo-seccion-home col-2">
+            <hgroup>
+                <h1>Tiitulo principal del articulo</h1> <!-- jerarquias -->
+                <h2>Subtitulo del Articulo</h2>
+            </hgroup>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Comparado con el censo realizado en 1988, en el cual la FADU resultaba tener 12.406 estudiantes, se
+                observa que la institución aumentó su número en más del doble.</p>
+            <figure>
+                <img src="imagenes/foto-fadu.jpg" alt="Foto de la FADU UBA"/>
+                <figcaption>La Facultad de Arquitectura, Diseño y Urbanismo (FADU) forma parte de la Universidad de
+                    Buenos Aires. Tiene su sede principal en el campus de la Ciudad Universitaria, un complejo
+                    construido en la década de 1960 e inspirado en las propuestas de Le Corbusier de 1929.
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="articulo-seccion-home col-2">
+            <hgroup>
+                <h1>Tiitulo principal del articulo</h1>
+            </hgroup>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Al momento de su creación en el año 1901, con el nombre de “Escuela de Arquitectura”, la FADU formaba
+                parte de la Facultad de Ciencias Exactas, Físicas y Naturales. Como tal, funcionaba dentro de su mismo
+                edificio, el de Perú 222/72/94, en la llamada Manzana de las Luces.</p>
+
+            <h3>Titulo del parrafo</h3>
+            <p>La ley nº 13045, aprobada en Diputados tras áspero debate, el 24 de setiembre de 1947 y por el Senado
+                tres días después, creó la Facultad de Arquitectura y Urbanismo (FAU) de la UBA.3 Cuando en 1948
+                comenzaron las clases, el primer Decano designado fue Ermete De Lorenzi, y la Universidad le cedió a la
+                FAU un edificio lindero, el de Alsina 673, para instalar algunas oficinas administrativas y el
+                Decanato.</p>
+        </article>
+
+        <article class="articulo-seccion-home col-1 articulo-destacado-1">
+            <hgroup>
+                <h1>Tiitulo principal del articulo</h1>
+            </hgroup>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+                Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
+                Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
+                cual incluye versiones de Lorem Ipsum.</p>
+            <figure>
+                <img src="imagenes/foto-fadu.jpg" alt="Foto de la FADU UBA"/>
+                <figcaption>La Facultad de Arquitectura, Diseño y Urbanismo (FADU) forma parte de la Universidad de
+                    Buenos Aires. Tiene su sede principal en el campus de la Ciudad Universitaria, un complejo
+                    construido en la década de 1960 e inspirado en las propuestas de Le Corbusier de 1929.
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="articulo-seccion-home col-3 articulo-destacado-2">
+            <hgroup>
+                <h1>Tiitulo principal del articulo</h1>
+                <h2>Subtitulo del Articulo</h2>
+            </hgroup>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+                Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
+                Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
+                cual incluye versiones de Lorem Ipsum.</p>
+            <figure>
+                <img src="imagenes/foto-fadu-2.jpg" alt="Foto de la FADU UBA"/>
+                <figcaption>La Facultad de Arquitectura, Diseño y Urbanismo (FADU) forma parte de la Universidad de
+                    Buenos Aires. Tiene su sede principal en el campus de la Ciudad Universitaria, un complejo
+                    construido en la década de 1960 e inspirado en las propuestas de Le Corbusier de 1929.
+                </figcaption>
+            </figure>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio.
+                Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de
+                Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor
+                de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras
+                de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos
+                textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y
+                1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en
+                el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el
+                Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea
+                en la sección 1.10.32</p>
+        </article>
+
+        <article class="articulo-seccion-home col-3 articulo-destacado-2">
+            <hgroup>
+                <h1>Tiitulo principal del articulo</h1>
+                <h2>Subtitulo del Articulo</h2>
+            </hgroup>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                manera que logró hacer un libro de textos especimen.</p>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio.
+                Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de
+                Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor
+                de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras
+                de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos
+                textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y
+                1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en
+                el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el
+                Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea
+                en la sección 1.10.32</p>
+        </article>
+
+        <article class="articulo-seccion-home col-3 articulo-destacado-2">
+            <hgroup>
+                <h1>Tiitulo principal del articulo</h1>
+                <h2>Subtitulo del Articulo</h2>
+            </hgroup>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                manera que logró hacer un libro de textos especimen.</p>
+
+            <h3>Titulo del parrafo</h3>
+            <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio.
+                Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de
+                Cristo, haciendo que este adquiera mas de 2000 años de antiguedad.</p>
+        </article>
+    </section>
+</main>
+
+<footer id="pie-de-pagina-principal">
+    <img class="logo-uba" src="http://dgpcfadu.com.ar/2016/1_cuat/jt16/tp/img/ubalogo.png" role="img"
+         alt="Logo de la UBA"/>
+    <small class="copyright">Los contenidos publicados en estas páginas son en el marco de un trabajo práctico realizado
+        por alumnos
+        de una materia de la Universidad de Buenos Aires. Los textos, logotipos, fotografías, tipografías, etc.,
+        pueden no ser de su autoría y sólo son utilizados a los fines prácticos del ejercicio.
+    </small>
+</footer>
+</body>
+
+</html>
